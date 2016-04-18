@@ -4,11 +4,11 @@ Upstream-Contact: https://github.com/davidjbradshaw/iframe-resizer/issues
 Source: https://github.com/davidjbradshaw/iframe-resizer
 
 Files: *
-Copyright: 2016 FIX_ME upstream author
+Copyright: 2013-2015 David J. Bradshaw
 License: Expat
 
 Files: debian/*
-Copyright: 2016 FIX_ME debian author
+Copyright: 2016 Doug Torrance <dtorrance@piedmont.edu>
 License: Expat
 
 License: Expat

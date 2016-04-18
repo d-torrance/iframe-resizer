@@ -1,0 +1,24 @@
+Source: node-iframe-resizer
+Section: web
+Priority: extra
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: FIX_ME debian author
+Build-Depends:
+ debhelper (>= 8)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.6
+Homepage: https://github.com/davidjbradshaw/iframe-resizer
+Vcs-Git: git://anonscm.debian.org/pkg-javascript/node-iframe-resizer.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/node-iframe-resizer.git
+XS-Testsuite: autopkgtest
+
+Package: node-iframe-resizer
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Keep same and cross domain iFrames sized to their content with support for window/content resizing, and multiple iFrames.
+ FIX_ME long description
+ .
+ Node.js is an event-based server-side JavaScript engine.

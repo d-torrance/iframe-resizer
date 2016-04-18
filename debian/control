@@ -2,12 +2,9 @@ Source: node-iframe-resizer
 Section: web
 Priority: extra
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
-Uploaders: FIX_ME debian author
-Build-Depends:
- debhelper (>= 8)
- , dh-buildinfo
- , nodejs
-Standards-Version: 3.9.6
+Uploaders: Doug Torrance <dtorrance@piedmont.edu>
+Build-Depends: debhelper (>= 9), dh-buildinfo, nodejs
+Standards-Version: 3.9.8
 Homepage: https://github.com/davidjbradshaw/iframe-resizer
 Vcs-Git: git://anonscm.debian.org/pkg-javascript/node-iframe-resizer.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/node-iframe-resizer.git
@@ -15,10 +12,27 @@ XS-Testsuite: autopkgtest
 
 Package: node-iframe-resizer
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
-Description: Keep same and cross domain iFrames sized to their content with support for window/content resizing, and multiple iFrames.
- FIX_ME long description
+Depends: nodejs, ${misc:Depends}
+Description: Automatic iFrame resizing (Node.js module)
+ This library enables the automatic resizing of the height and width of both
+ same and cross domain iFrames to fit their contained content. It provides a
+ range of features to address the most common issues with using iFrames, these
+ include:
+ - Height and width resizing of the iFrame to content size.
+ - Works with multiple and nested iFrames.
+ - Domain authentication for cross domain iFrames.
+ - Provides a range of page size calculation methods to support complex CSS
+   layouts.
+ - Detects changes to the DOM that can cause the page to resize using
+   MutationObserver.
+ - Detects events that can cause the page to resize (Window Resize, CSS
+   Animation and Transition, Orientation Change and Mouse events).
+ - Simplified messaging between iFrame and host page via postMessage.
+ - Fixes in page links in iFrame and supports links between the iFrame and
+   parent page.
+ - Provides custom sizing and scrolling methods.
+ - Exposes parent position and viewport size to the iFrame.
+ - Works with ViewerJS to support PDF and ODF documents.
+ - Fallback support down to IE8. .
  .
  Node.js is an event-based server-side JavaScript engine.
